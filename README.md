@@ -22,7 +22,7 @@ The easiest way to use labelroi is with [uv](https://github.com/astral-sh/uv)'s 
 # Install uv if you haven't already
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Run labelroi directly
+# Run labelroi directly (one-time use)
 uvx labelroi
 
 # Or with a specific image/video
@@ -30,6 +30,26 @@ uvx labelroi path/to/image.png
 ```
 
 This will automatically download and run labelroi with all its dependencies in an isolated environment.
+
+### Install as a tool (using uv)
+
+For frequent use, you can install labelroi as a persistent tool:
+
+```bash
+# Install labelroi as a tool (adds to PATH)
+uv tool install labelroi
+
+# Now you can run it directly
+labelroi
+
+# Update to the latest version
+uv tool upgrade labelroi
+
+# Or install a specific version
+uv tool install labelroi@0.1.0
+```
+
+This installs labelroi in an isolated environment and makes it permanently available in your PATH.
 
 ## Installation
 
