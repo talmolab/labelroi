@@ -51,6 +51,34 @@ uv tool install labelroi@0.1.0
 
 This installs labelroi in an isolated environment and makes it permanently available in your PATH.
 
+## Updating
+
+### Update from PyPI (stable releases)
+
+```bash
+# If installed as a uv tool
+uv tool upgrade labelroi
+
+# If installed with pip
+pip install --upgrade labelroi
+
+# If installed with uv pip
+uv pip install --upgrade labelroi
+```
+
+### Update from GitHub main branch (latest development)
+
+```bash
+# Install/update directly from GitHub main branch
+uv tool install --force --from git+https://github.com/talmolab/labelroi.git labelroi
+
+# Or with pip
+pip install --upgrade git+https://github.com/talmolab/labelroi.git
+
+# Or run directly without installation
+uvx --from git+https://github.com/talmolab/labelroi.git labelroi
+```
+
 ## Installation
 
 ### Install from PyPI
