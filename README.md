@@ -90,8 +90,8 @@ labelroi path/to/video.mp4
 ### Saving and Loading ROIs
 
 ROIs are automatically saved with the same name as your image/video file with a `.rois.yml` suffix:
-- Image: `my_image.png` ’ ROIs: `my_image.rois.yml`
-- Video: `my_video.mp4` ’ ROIs: `my_video.rois.yml`
+- Image: `my_image.png` â†’ ROIs: `my_image.rois.yml`
+- Video: `my_video.mp4` â†’ ROIs: `my_video.rois.yml`
 
 Click **"Save ROIs to YAML"** to save your ROIs. They will automatically load when you open the same image/video again.
 
