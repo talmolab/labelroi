@@ -12,18 +12,35 @@ A Qt-based application for drawing and labeling polygon/polyline ROIs (Regions o
 - **YAML Export/Import**: Save ROIs to YAML files for later use or sharing
 - **Geometry Analysis**: Automatic calculation of area, perimeter, and vertex count using Shapely
 
-## Installation
+## Quick Start
 
-### Prerequisites
+### Run without installation (using uv)
 
-Install [uv](https://github.com/astral-sh/uv) if you haven't already:
+The easiest way to use labelroi is with [uv](https://github.com/astral-sh/uv)'s tool run feature - no installation needed!
 
 ```bash
-# On macOS/Linux
+# Install uv if you haven't already
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Or with pip
-pip install uv
+# Run labelroi directly
+uvx labelroi
+
+# Or with a specific image/video
+uvx labelroi path/to/image.png
+```
+
+This will automatically download and run labelroi with all its dependencies in an isolated environment.
+
+## Installation
+
+### Install from PyPI
+
+```bash
+# Using pip
+pip install labelroi
+
+# Or using uv
+uv pip install labelroi
 ```
 
 ### Install from Source
